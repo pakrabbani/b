@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="login.css">
+</head>
+<body>
+   		
+    
+    <div id="color" >
+ <div class="container-fluid" id="register">
+                <h2 class="center">Registeration </h2>
+                <button class="button1" style=" margin-top:148px;"  type="submit" onclick="Registeration()"> Registeration</button>
+                <button class="button2" onclick="login()">login </button>
+                <form action="" id="colour1">
+           
+               <div class="form-group">
+                                   
+                               <div  class="row" >
+                                <!-- <div class="col-md-1"> <img src="public/img/c.png" id=img0></div><!-->
+                
+                                   <div class=" col-md-6  col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-6" >
+                                       <input type="text" name="name" placeholder="enter name" class="form-control" >
+                                        
+                                   </div>
+                               </div>
+                           </div>
+                      
+            
+            
+               <div class="form-group" >
+               <div class="row">
+                    <div class=" col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-6"> 
+                       <input text="email" placeholder="enter email" class="form-control">
+           
+                   </div>
+               </div>
+               </div>
+               <div class="form-group">
+                   <div class="row">
+                   <div class=" col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-6"> 
+                           <input text="password" placeholder="enter password"  class="form-control">
+               
+                       </div>
+                   </div>
+                   </div>
+           
+                   <div class="form-group">
+                           <div class="row">
+                           <div class=" col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-6"> 
+                                   <input text="password" placeholder="confirm  password"  class="form-control">
+                       
+                               </div>
+                           </div>
+                           </div>
+           
+           
+                           <div class="form-group">
+                               <div  class="row">
+                                   <div class=" col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-6">
+                                       <input type="text" name="name" placeholder="enter market name" class="form-control">
+                                        
+                                   </div>
+                               </div>
+                           </div>
+                      <div class="row">
+                    <!--<div class="col-md-offset-7 col-md-1 col-sm-offset-7"> <!-->
+                <button  id="button" class="btn-default" type="submit" onclick="Login()" > login </button> 
+                      </div>
+                       
+               </form>
+
+ </div>
+    </div>
+
+<div id="color1">
+    <div class="container-fluid">
+    <h2 class="center1"> Login Form</h2>
+    <form  action=""  id="colour">
+    
+         <div class="form-group"  >
+               <div class="row">
+                    <div class=" col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-6"> 
+                       <input text="email" placeholder="enter email" class="form-control " style="margin-top: -166px;" id="left">
+           
+                   </div>
+               </div>
+               </div>
+               
+                   <div class="row">
+                   <div class=" col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-6"> 
+                           <input text="password"  placeholder="enter password"  class="form-control" style="margin-top: -154px;" id="left1" >
+               
+                       
+                
+                   
+                <button  class="btn-default1" type="submit"  > login </button> 
+                      </div></div>
+                
+    </form>
+         
+                    <!--<div class="col-md-offset-7 col-md-1 col-sm-offset-7"> <!-->
+                
+</div>
+</div>
+
+
+</body>
+</html>
+       
+
+
+       <script>
+       function Registeration()
+       {
+           var ADDtoNode=document.getElementById("color1");
+           ADDtoNode.style.display="none";
+           var Registeration=document.getElementById("colour1").style.display="block";
+           
+
+           console.log(2);
+       }
+
+       function login()
+       {
+            document.getElementById("colour1").style.display="none";
+      
+           
+           var ADD=document.getElementById("color1");
+           ADD.setAttribute("style","display:block;");
+           var Left=document.getElementById("left");
+           Left.setAttribute("style","display:block;");
+            var Left1=document.getElementById("left1");
+            Left1.setAttribute("style","display:block;");
+           
+           // Left1.setAttribute("style","margin-top:315px,margin-left:20px;");
+             //Left1.setAttribute("style","margin-left:-315px;");
+          
+           console.log(2);
+       }
+
+       </script>
